@@ -1,0 +1,16 @@
+Recyclable&low fat products
+Table:products
+Questions:To find the ids of product that are both low fat and recyclable
+Query:
+select product_id from products where low_fats='Y' and recyclable='Y';
+logic:
+step1:
+understand the question:the question says find product_id of the product which product have low_fats and recyclable
+step2:
+To see the input table 
+step3:
+To predict the output table using only logic not query
+step4:
+write a query for that 
+step5:
+Explanation:get the product_id from product table but that can be low_fat and recyclable(means low_fats='Y' and recyclable='y')
