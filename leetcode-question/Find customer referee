@@ -1,0 +1,11 @@
+Table:Customer
+Question:Find the name of the customer that are either:
+1) referre by any customer with id!=2
+2) not referred by any customer
+query:
+select name from customer where referre_id!=2 or referre_id is null;
+Explanation:
+step1:first get the name from customer table 
+step2:apply condition to filter the row and name
+condition is referre_id=2 is not referre any customer and referre_id is null
+step3:the two condition is satified and get the output
