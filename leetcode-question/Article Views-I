@@ -1,0 +1,11 @@
+Table:Views
+Question:
+write a solution to find all the authors that viewed at least one of their own articles,id in ascending order.
+query:
+select distinct author_id as id from views where author_id=viewer_id order by author_id;
+Explaination:
+first,understand the question ,the questions says find all the author_id in the views table 
+second,find the condition in the question and compare to the sql concept
+what actually does means the table columns are article_id,author_id,viewer_id and viewer_date 
+the input table the viewer_date does not needed for that question and output columns is only author_id in id column
+the compare the author_id and viewer_id and the author_id can be in viewer_id means return the author_id
