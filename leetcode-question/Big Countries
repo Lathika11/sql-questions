@@ -1,0 +1,9 @@
+Table:World
+Question:A country is big if
+->area at least three million or population at least twenty-five million
+->output:name,population
+Condition:area>3000000 or population>2500000
+Query:select name,population,area from world where area<3000000 or population<2500000;
+Explanation:
+step1:to find the name,population and area column in the world table
+step2:apply condition area is atleast three million or population is atleast twenty-five million and or filter the rows means use the where clause 
