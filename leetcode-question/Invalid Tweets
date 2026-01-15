@@ -1,0 +1,6 @@
+Invalid Tweets
+Table:Tweets
+Questions:
+To find the ID of the invalid tweets.The tweet is greater than 15 and it is invalid
+Query:
+select tweet_id from tweets where length(content)>15;
