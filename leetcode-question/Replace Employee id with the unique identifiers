@@ -1,0 +1,5 @@
+Table:
+Employees,EmployeeUni
+Question:write a solution to show the unique id of each user,if a user does not have unique Id replace just show null
+Query:
+select eu.unique_id,e.name from employees e left join employeeUni eu on e.id=eu.id;
