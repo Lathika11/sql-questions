@@ -1,0 +1,6 @@
+Table:Employee,Bonus
+Question:write a solution to report the name and bonus amount of each employee who satisfies either of the following
+-->employee has bonus less than 1000
+-->Employee did not get any bonus
+Query:
+select name,bonus from employee left join bonus on employee.empId=bonus.empId where bonus<1000 or bonus is null;
