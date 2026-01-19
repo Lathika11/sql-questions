@@ -1,0 +1,4 @@
+Table:Employee
+Questions:write a solution to find managers with at least five direct reports
+Query:
+Select name from employee where id in (select managerId from employee group by managerId having count(*)>=5);
